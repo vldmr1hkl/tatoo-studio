@@ -1,0 +1,320 @@
+.wrapper-contact{
+    color: black;
+    height: auto;
+}
+
+.wrapper-contact .header {
+    border-bottom: 1px solid black;
+}
+
+.wrapper-contact .line-between-text{
+    background-color: black;
+}
+
+.wrapper-contact .menu-mobile__open-button{
+    filter: invert(1);
+}
+
+.wrapper-contact .appointments__link {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.wrapper-contact .header__title{
+    font-size: 21vw;
+    text-transform: uppercase;
+    letter-spacing: -.03em;
+}
+
+.wrapper-contact .labs-link img{
+    filter: invert(1);
+}
+
+.contact-content{
+    padding: 42px 16px 32px;
+}
+
+.time-visitor{
+    display: flex;
+    align-items: center;
+    
+}
+
+.time-visitor__icon{
+    width: 71px;
+    height: 71px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-right: 16px;
+    position: relative;
+    z-index: -1;
+}
+
+#time-visitor.animation .time-visitor__icon{
+    animation: spinAnimation 3s cubic-bezier(0.1, 0.4, 0.9, 1) ;
+    transform-style: preserve-3d;
+}
+
+
+@keyframes spinAnimation {
+    0% {
+        transform: rotateX(0deg);
+    }
+    40% {
+        transform: rotateX(1080deg); /* Швидке обертання - змініть кут за потребою */
+    }
+    100% {
+        transform: rotateX(1440deg); /* Повільне обертання - змініть кут за потребою */
+    }
+}
+
+
+
+.time-visitor__text{
+    font-size: 4.8em;
+}
+
+.appointments-info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 162px;
+}
+
+.appointments-info__title h2{
+    font-size: 12em;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: -.07em;
+    line-height: .9;
+}
+
+.appointments-info__content{
+    font-size: 5.2em;
+    max-width: 442px;
+    margin-top: 24px;
+}
+
+
+
+.contact-form{
+    margin-top: 82px;
+}
+
+.form-group{
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 24px;
+    font-size: 4.75em;
+    text-transform: uppercase;
+    
+}
+
+.form-group input,
+.form-group textarea{
+    width: 100%;
+    border: none;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 10em;
+    letter-spacing: -0.03em;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder{
+    color: inherit;
+}
+.form-group button{
+    width: 100%;
+    border: none;
+    text-transform: uppercase;
+    padding: 30px 15px;
+    font-size: 6em;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    transition: all .3s ease-in 0s
+
+}
+
+.form-group button:hover{
+    background-color: white;
+    color: black;
+}
+
+.privacy-policy{
+    display: flex;
+    align-items: center;
+}
+.privacy-policy input{
+    width: 26px;
+    height: 26px;
+    margin-right: 8px;
+    margin-bottom: 0;
+}
+.privacy-policy label{
+    font-size: 2.75em;
+    margin: 0;
+}
+
+
+.contant-footer {
+    padding: 0px 16px 90px;
+
+}
+
+.contant-footer__item:first-child{
+    border-top: 1px solid black;
+}
+
+.contant-footer__item {
+    text-transform: uppercase;
+    padding: 24px 0 24px;
+    border-bottom: 1px solid black;
+
+}
+
+.contant-footer__title {
+    font-size: 4.75em;
+    padding-bottom: 24px;
+
+}
+
+.contant-footer__content{
+    font-size: 10em;
+    letter-spacing: -0.04em;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .contact-content{
+        padding-top: 52px 32px;
+    }
+    .time-visitor__text{
+        font-size: 2.5em;
+    }
+    .appointments-info{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 162px;
+    }
+    .appointments-info__title,
+    .appointments-info__content{
+        width: 50%;
+    }
+    .appointments-info__title h2{
+        font-size: 6.6em;
+    }
+    .appointments-info__content{
+        margin: 0;
+        font-size: 2.3em;
+    }
+    .contact-form{
+        margin-top: 102px;
+    }
+    .form-group label{
+        font-size: 2em;
+    }
+    
+    .form-group input,
+    .form-group textarea{
+        font-size: 5.6em;
+    }
+    .form-group button{
+        font-size: 2.7em;
+    }
+    .privacy-policy label{
+        font-size: 2.1em;
+    }
+    .contant-footer__item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .contant-footer__title {
+        font-size: 2em;
+        padding: 0;
+    }
+    
+    .contant-footer__content{
+        font-size: 4em;
+    }
+    .contant-footer {
+        padding: 0px 32px 90px;
+        border-top: 1px solid black;
+    }
+    
+
+}
+
+@media only screen and (min-width: 1024px) {
+    .contact-content{
+        padding: 72px 42px;
+    }
+    .time-visitor__text{
+        font-size: 1.4em;
+    }
+    .appointments-info{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 162px;
+    }
+    .appointments-info__title,
+    .appointments-info__content{
+        width: 50%;
+    }
+    
+    .appointments-info__title h2{
+        font-size: 6.9em;
+    }
+    
+    .appointments-info__content{
+        font-size: 1.8em;
+    }
+    .appointments-info__content{
+        margin: 0;
+    }
+    .contact-form{
+        margin-top: 102px;
+    }
+    
+
+
+    .form-group label{
+        font-size: 1.35em;  
+    }
+    
+    .form-group input,
+    .form-group textarea{
+        font-size: 4.5em;
+    }
+    .form-group button{
+        font-size: 1.9em;
+    }
+    .privacy-policy label{
+        font-size: 1.15em;
+    }
+
+    .contant-footer {
+        padding: 0px 42px 90px;;
+    }
+
+    .contant-footer__item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .contant-footer__title {
+        font-size: 2em;
+        padding: 0;
+    }
+    
+    .contant-footer__content{
+        font-size: 4em;
+    }
+
+}
